@@ -13,7 +13,6 @@ const EmailProvider = ({ children }) => {
     const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     try {
       setSendEmail(true);
-        console.log(serviceID);
 
       await emailjs.send(serviceID, templateID, 
         {
@@ -22,10 +21,8 @@ const EmailProvider = ({ children }) => {
           message: form.message,
         }, publicKey);
         
-      console.log("Email sent successfully");
       toast.success("Email sent successfully!");
     } catch (error) {
-      console.log(error);
       toast.error("Failed to send email. Please try again later.");
     } finally {
       setSendEmail(false);
