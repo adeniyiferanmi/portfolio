@@ -74,7 +74,7 @@ const Dashboard = () => {
               fontWeight: "bold",
             }}
           >
-            <p>Avaliable for freelance work</p>
+            <p>Avaliable for work</p>
           </div>
           <div className="dashboard-section1">
             <div>
