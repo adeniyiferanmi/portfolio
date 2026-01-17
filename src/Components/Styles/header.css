@@ -51,18 +51,18 @@
 @media(max-width:700px){
   .hamburger-container{
     display: block;
+    
   }
   .close{
     display: none;
   }
   .ul-container{
     position: absolute;
-    background-color: rgba(245, 159, 11, 0.171);
+    background: #fff7f0;
     left: 0;
     width: 100%;
     border: 1px solid rgb(245, 158, 11);
     top: 80px;
-    /* text-align: center; */
   }
   .ul-container ul{
     flex-direction: column;
@@ -74,6 +74,8 @@
 
   }
   .ul-container li{
-    color: rgb(245, 158, 11);
+    color: #2d1f14;
+
+    /* color: rgb(245, 158, 11); */
   }
 }
