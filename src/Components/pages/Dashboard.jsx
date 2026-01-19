@@ -87,10 +87,10 @@ const Dashboard = () => {
                 impact. Technology is my tool, solutions are the goal.
               </p>
               <div className="dashboard-section1-buttons">
-                <a href="">
+                <a href="#project">
                   <button className="button1">View Projects</button>
                 </a>
-                <a href="">
+                <a href="#contact">
                   <button className="button2">Contact Me</button>
                 </a>
               </div>
@@ -408,7 +408,7 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div> 
         <Footer />
       </div>
     </div>
