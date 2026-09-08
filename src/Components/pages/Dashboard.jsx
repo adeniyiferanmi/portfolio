@@ -5,6 +5,10 @@ import myImage from "../Multimedia/my images.jpeg";
 import project1 from "../Multimedia/project1.jpeg";
 import project2 from "../Multimedia/project2.jpeg";
 import project3 from "../Multimedia/project4.jpeg";
+import project4 from "../Multimedia/project5.jpeg";
+import project5 from "../Multimedia/project6.jpeg";
+import project6 from "../Multimedia/project7.jpeg";
+
 import Footer from "../Ui/Footer";
 import * as Yup from "yup";
 import { EmailContext } from "../../Context/EmailContext";
@@ -36,12 +40,10 @@ const Dashboard = () => {
       message: "",
     },
   });
-  
+
   const onSubmit = async (form) => {
     const result = await sendEmail(form);
-
-    
-  }
+  };
   return (
     <div
       style={{
@@ -58,9 +60,7 @@ const Dashboard = () => {
         }}
         id="home"
       >
-        <div
-          className="dashboard-container"
-        >
+        <div className="dashboard-container">
           <div
             style={{
               backgroundColor: "rgba(241, 192, 106, 1)",
@@ -224,6 +224,113 @@ const Dashboard = () => {
                   target="_blank"
                 >
                   <i className="bi bi-github"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="dashboard-card">
+            <div>
+              <img src={project4} alt="" />
+            </div>
+            <div className="dashboard-text">
+              <h2>Streaming App</h2>
+              <p>
+                A feature-rich movie streaming platform with trending catalogs,
+                real-time media feeds, and responsive UI.
+              </p>
+              <div className="stack">
+                <p>React</p>
+                <p>Node.js</p>
+                <p>Express</p>
+                <p>PostgreSQL</p>
+                <p>Prisma</p>
+                <p>CSS</p>
+              </div>
+              <div className="dashboard-link">
+                <a
+                  href="https://adeniyiferanmi.github.io/kuda/"
+                  target="_blank"
+                >
+                  <i className="bi bi-box-arrow-up-right"></i> Live Demo
+                </a>
+                <a
+                  href="https://github.com/adeniyiferanmi/kuda.git"
+                  target="_blank"
+                >
+                  <i className="bi bi-github"></i>View Code
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="dashboard-card">
+            <div>
+              <img src={project5} alt="Web Novel App" />
+            </div>
+
+            <div className="dashboard-text">
+              <h2>Web Novel App</h2>
+
+              <p>
+                A full-stack web novel platform where readers can discover,
+                read, and manage novels while authors can create, publish, and
+                manage their stories.
+              </p>
+
+              <div className="stack">
+                <p>React</p>
+                <p>Node.js</p>
+                <p>Express</p>
+                <p>MongoDB</p>
+                <p>Mongoose</p>
+                <p>Tailwind </p>
+              </div>
+
+              <div className="dashboard-link">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right"></i>
+                  Live Demo
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-github"></i>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="dashboard-card">
+            <div>
+              <img src={project6} alt="Appointment Booking Website" />
+            </div>
+
+            <div className="dashboard-text">
+              <h2>Appointment Booking Website</h2>
+
+              <p>
+                A full-stack appointment booking platform that allows users to
+                schedule appointments easily while businesses can manage
+                bookings, services, and customer information.
+              </p>
+
+              <div className="stack">
+                <p>React</p>
+                <p>Node.js</p>
+                <p>Express</p>
+                <p>MongoDB</p>
+                <p>Mongoose</p>
+                <p>Tailwind</p>
+              </div>
+
+              <div className="dashboard-link">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-box-arrow-up-right"></i>
+                  Live Demo
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i className="bi bi-github"></i>
+                  View Code
                 </a>
               </div>
             </div>
@@ -401,14 +508,22 @@ const Dashboard = () => {
               </div>
               <div>
                 <label htmlFor="">Your Message</label>
-                <textarea name="" id="" cols="30" rows="10" {...register("message", { required: true })}></textarea>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  {...register("message", { required: true })}
+                ></textarea>
               </div>
-              <button disabled={sendingEmail}>{sendingEmail ? "Sending..." : "Send Message"}</button>
+              <button disabled={sendingEmail}>
+                {sendingEmail ? "Sending..." : "Send Message"}
+              </button>
             </form>
           </div>
         </div>
       </div>
-      <div> 
+      <div>
         <Footer />
       </div>
     </div>
